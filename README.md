@@ -12,5 +12,7 @@
 
 🎯 Always learning, always coding
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=giovanna-cambraia)](https://github.com/giovanna-cambraia/github-readme-stats)
+
 
 🐙 Explore my projects below!
