@@ -83,4 +83,5 @@ Currently exploring: REST APIs, testing, Docker, and software architecture best 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 🐙 Explore meus projetos abaixo!
+
 🐙 Explore my projects below!
