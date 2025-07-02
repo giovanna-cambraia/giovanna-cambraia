@@ -1,6 +1,6 @@
 :
 
-### 👋 Olá! Eu sou Giovanna Cambraia
+### 👋 Olá! 
 💻 Dev apaixonada por Desenvolvimento Web, Backend (JavaScript & Java) e Arquitetura de Software
 
 🚀 Construindo soluções eficientes e escaláveis, uma linha de código por vez
@@ -14,7 +14,7 @@
 🎯 Sempre aprendendo, sempre codando
 
 ### 👩‍💻 Sobre mim
-Oi! Sou a Giovanna Cambraia, desenvolvedora focada em criar soluções web modernas, eficientes e escaláveis.
+Sou a Giovanna Cambraia, desenvolvedora focada em criar soluções web modernas, eficientes e escaláveis.
 Atualmente estudo Ciência da Computação e venho mergulhando de cabeça em Backend com JavaScript e Java, além de explorar o universo da Arquitetura de Software.
 
 Também tenho grande interesse por robótica 🤖, por isso venho estudando C/C++.
@@ -32,7 +32,7 @@ Estudando agora: APIs REST, testes, Docker e boas práticas de arquitetura
 
 ---
 
-### 👋 Hey there! I'm Giovanna 
+### 👋 Hey there! 
 
 💻 Dev in love with Web Development, Backend (JavaScript & Java), and Software Architecture
 
@@ -47,7 +47,7 @@ Estudando agora: APIs REST, testes, Docker e boas práticas de arquitetura
 🎯 Always learning, always coding
 
 ## 👩‍💻 About Me
-Hi there! I'm Giovanna Cambraia, a developer focused on building modern, efficient, and scalable web solutions.
+I'm Giovanna Cambraia, a developer focused on building modern, efficient, and scalable web solutions.
 I'm currently studying Computer Science, diving deep into Backend Development with JavaScript and Java, and exploring the world of Software Architecture.
 
 I also have a strong interest in robotics 🤖, which led me to start learning C/C++.
