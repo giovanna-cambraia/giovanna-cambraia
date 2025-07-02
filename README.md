@@ -12,6 +12,23 @@
 
 🎯 Always learning, always coding
 
+## 👩‍💻 About Me
+Hi there! I'm Giovanna Cambraia, a developer focused on building modern, efficient, and scalable web solutions.
+I'm currently studying Computer Science, diving deep into Backend Development with JavaScript and Java, and exploring the world of Software Architecture.
+
+I also have a strong interest in robotics 🤖, which led me to start learning C/C++.
+
+💡 Naturally curious, I love learning new things, experimenting with different technologies, and creating projects that solve real-world problems.
+
+## ⚙️ Techs that I practice daily:
+Languages: JavaScript, Java, C/C++, HTML/CSS
+
+Frameworks & libs: Node.js, React, Express
+
+Tools: Git, GitHub, VSCode, Postman
+
+Currently exploring: REST APIs, testing, Docker, and software architecture best practices
+
 
 ## 🌐 Socials:
 
