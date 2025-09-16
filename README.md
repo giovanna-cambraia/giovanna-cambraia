@@ -28,7 +28,7 @@ Frameworks & libs: Node.js, React, Express
 
 Ferramentas: Git, GitHub, VSCode, Postman
 
-Estudando agora: APIs REST, testes, Docker e boas práticas de arquitetura
+Estudando agora: APIs REST, Nest.js, testes, Docker e boas práticas de arquitetura
 
 ---
 
@@ -61,7 +61,7 @@ Frameworks & libs: Node.js, React, Express
 
 Tools: Git, GitHub, VSCode, Postman
 
-Currently exploring: REST APIs, testing, Docker, and software architecture best practices
+Currently exploring: REST APIs, Nest.js, testing, Docker, and software architecture best practices
 
 
 ## 🌐 Socials:
