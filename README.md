@@ -1,36 +1,8 @@
 :
 
-### 👋 Olá! 
-💻 Dev apaixonada por Desenvolvimento Web, Backend (JavaScript & Java) e Arquitetura de Software
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=6AFFB7&width=435&lines=Backend+Dev;Computer+Science+Student;Robotics+Enthusiast)
 
-🚀 Construindo soluções eficientes e escaláveis, uma linha de código por vez
-
-🔧 Atualmente criando projetos com Node.js, React e um toque de C++ para robótica
-
-📚 Estudante de Ciência da Computação 
-
-🤖 Entusiasta por robótica e sistemas automatizados
-
-🎯 Sempre aprendendo, sempre codando
-
-### 👩‍💻 Sobre mim
-Sou a Giovanna Cambraia, desenvolvedora focada em criar soluções web modernas, eficientes e escaláveis.
-Atualmente estudo Ciência da Computação e venho mergulhando de cabeça em Backend com JavaScript e Java, além de explorar o universo da Arquitetura de Software.
-
-Também tenho grande interesse por robótica 🤖, por isso venho estudando C/C++.
-
-💡 Curiosa por natureza, adoro aprender coisas novas, experimentar tecnologias diferentes e construir projetos que resolvem problemas reais.
-
-### ⚙️ Techs que pratico diariamente:
-Linguagens: JavaScript, Java, C/C++, HTML/CSS
-
-Frameworks & libs: Node.js, React, Express
-
-Ferramentas: Git, GitHub, VSCode, Postman
-
-Estudando agora: APIs REST, Nest.js, testes, Docker e boas práticas de arquitetura
-
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
 ### 👋 Hey there! 
 
@@ -45,6 +17,8 @@ Estudando agora: APIs REST, Nest.js, testes, Docker e boas práticas de arquitet
 🤖 Enthusiastic for robotics and automated systems
 
 🎯 Always learning, always coding
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
 ## 👩‍💻 About Me
 I'm Giovanna Cambraia, a developer focused on building modern, efficient, and scalable web solutions.
@@ -63,6 +37,7 @@ Tools: Git, GitHub, VSCode, Postman
 
 Currently exploring: REST APIs, Nest.js, testing, Docker, and software architecture best practices
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
 ## 🌐 Socials:
 
@@ -77,11 +52,13 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 ![](https://nirzak-streak-stats.vercel.app/?user=giovanna-cambraia&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=giovanna-cambraia&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 [![](https://visitcount.itsvg.in/api?id=giovanna-cambraia&icon=0&color=11)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
-🐙 Explore meus projetos abaixo!
+![Snake animation](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 🐙 Explore my projects below!
