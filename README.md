@@ -2,7 +2,7 @@
 SYSTEM BOOTING...
 █▓▒░ Backend Module Loaded        ✔
 █▓▒░ Robotics Interface Ready    ✔
-█▓▒░ Status: <!-- SYSTEM_STATUS -->ONLINE<!-- SYSTEM_STATUS -->
+█▓▒░ Status: <!-- SYSTEM_STATUS -->ACTIVE 🟢 (last commit: 0d ago)<!-- SYSTEM_STATUS -->
 ```
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
