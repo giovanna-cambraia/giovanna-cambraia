@@ -1,6 +1,6 @@
-:
+![Cyber Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:00ff9c,100:00c6ff&height=180&section=header&text=Giovanna%20Cambraia&fontColor=00ff9c&fontSize=40&fontAlignY=35)
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=6AFFB7&width=435&lines=Backend+Dev;Computer+Science+Student;Robotics+Enthusiast)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=00FF9C&center=true&vCenter=true&width=520&lines=Backend+Developer;Computer+Science+Student;Robotics+Enthusiast;Always+Learning)
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
@@ -28,6 +28,8 @@ I also have a strong interest in robotics 🤖, which led me to start learning C
 
 💡 Naturally curious, I love learning new things, experimenting with different technologies, and creating projects that solve real-world problems.
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
+
 ## ⚙️ Techs that I practice daily:
 Languages: JavaScript, Java, C/C++, HTML/CSS
 
@@ -49,11 +51,8 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 # 📊 GitHub Stats:
 
-![](https://nirzak-streak-stats.vercel.app/?user=giovanna-cambraia&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=giovanna-cambraia&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
-[![](https://visitcount.itsvg.in/api?id=giovanna-cambraia&icon=0&color=11)](https://visitcount.itsvg.in)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=giovanna-cambraia&show_icons=true&theme=tokyonight&hide_border=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=giovanna-cambraia&layout=compact&theme=tokyonight&hide_border=true)
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
