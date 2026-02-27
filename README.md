@@ -98,9 +98,7 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 ## 📓 Dev Log (auto-generated)
 <!-- DEV_LOG:START -->
-- Add authentication middleware
-- Refactor REST controllers
-- Improve Docker setup
+
 <!-- DEV_LOG:END -->
 
 ![Snake animation](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg)
