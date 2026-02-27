@@ -1,0 +1,36 @@
+name: Update Dev Log
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" # every Monday
+  workflow_dispatch:
+
+jobs:
+  update-dev-log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Dev Log
+        run: |
+          COMMITS=$(git log --since="7 days ago" --pretty=format:"- %s" | head -n 5)
+
+          if [ -z "$COMMITS" ]; then
+            COMMITS="- No commits this week"
+          fi
+
+          awk '
+            /<!-- DEV_LOG:START -->/ {print; print ENVIRON["COMMITS"]; skip=1; next}
+            /<!-- DEV_LOG:END -->/ {skip=0}
+            !skip
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "chore: update dev log" || exit 0
+          git push
