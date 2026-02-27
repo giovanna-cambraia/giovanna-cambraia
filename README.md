@@ -51,8 +51,8 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 # 📊 GitHub Stats:
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=giovanna-cambraia&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=giovanna-cambraia&layout=compact&theme=tokyonight&hide_border=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=giovanna-cambraia&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&cache_seconds=86400)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=giovanna-cambraia&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400)
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
