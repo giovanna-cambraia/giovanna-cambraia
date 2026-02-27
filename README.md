@@ -105,6 +105,11 @@ _No commits this week — recharging... ⚡_
 
 <!-- DEV_LOG:END -->
 
+## ⏱️ This Week I Coded...
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
 ![Snake animation](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
