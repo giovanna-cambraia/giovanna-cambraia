@@ -1,7 +1,9 @@
-![Cyber Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:00ff9c,100:00c6ff&height=180&section=header&text=Giovanna%20Cambraia&fontColor=00ff9c&fontSize=40&fontAlignY=35)
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=00FF9C&center=true&vCenter=true&width=520&lines=Backend+Developer;Computer+Science+Student;Robotics+Enthusiast;Always+Learning)
-
+```txt
+SYSTEM BOOTING...
+█▓▒░ Backend Module Loaded        ✔
+█▓▒░ Robotics Interface Ready    ✔
+█▓▒░ Status: <!-- SYSTEM_STATUS -->ONLINE<!-- SYSTEM_STATUS -->
+```
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
 ### 👋 Hey there! 
@@ -47,14 +49,59 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 # 💻 Tech Stack:
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react) ![Nuxt JS](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxt.js&logoColor=#00DC82)
+## 🧠 Languages
+
+![C++](https://img.shields.io/badge/C%2B%2B-000000?style=for-the-badge&logo=c%2B%2B&logoColor=00599C)
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=FFD43B)
+![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
+
+## 🧱 Frameworks & Libraries
+
+![Node.js](https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=node.js&logoColor=3C873A)
+![NestJS](https://img.shields.io/badge/NestJS-000000?style=for-the-badge&logo=nestjs&logoColor=E0234E)
+![React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-000000?style=for-the-badge&logo=react-router&logoColor=CA4245)
+![Context API](https://img.shields.io/badge/Context_API-000000?style=for-the-badge&logo=react)
+![three.js](https://img.shields.io/badge/three.js-000000?style=for-the-badge&logo=three.js&logoColor=FFFFFF)
+![GraphQL](https://img.shields.io/badge/GraphQL-000000?style=for-the-badge&logo=graphql&logoColor=E10098)
+
+## 🗄️ Databases
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=336791)
+![MySQL](https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=4479A1)
+![MongoDB](https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=4EA94B)
+
+## ⚙️ Tools & Concepts
+
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=F05032)
+![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=2496ED)
+![REST API](https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logoColor=00FF9C)
+![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logoColor=00FF9C)
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
 # 📊 GitHub Stats:
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=giovanna-cambraia&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&cache_seconds=86400)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=giovanna-cambraia&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400)
+<img
+  src="https://stats-github-readme.vercel.app/api?username=giovanna-cambraia&show_icons=true&theme=tokyonight&hide_border=true"
+  alt="GitHub Stats"
+/>
+
+<img
+  src="https://stats-github-readme.vercel.app/api/top-langs/?username=giovanna-cambraia&layout=compact&theme=tokyonight&hide_border=true"
+  alt="Top Languages"
+/>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
+
+## 📓 Dev Log (auto-generated)
+<!-- DEV_LOG:START -->
+- Add authentication middleware
+- Refactor REST controllers
+- Improve Docker setup
+<!-- DEV_LOG:END -->
 
 ![Snake animation](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg)
 
