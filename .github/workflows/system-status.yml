@@ -1,0 +1,46 @@
+name: Update System Status
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # runs daily
+  workflow_dispatch:
+
+jobs:
+  system-status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Calculate system status
+        run: |
+          LAST_COMMIT_DATE=$(git log -1 --format=%ct)
+          NOW=$(date +%s)
+          DAYS_DIFF=$(( (NOW - LAST_COMMIT_DATE) / 86400 ))
+
+          if [ "$DAYS_DIFF" -le 3 ]; then
+            STATUS="ACTIVE 🟢 (last commit: ${DAYS_DIFF}d ago)"
+          elif [ "$DAYS_DIFF" -le 7 ]; then
+            STATUS="IDLE 🟡 (last commit: ${DAYS_DIFF}d ago)"
+          else
+            STATUS="OFFLINE 🔴 (last commit: ${DAYS_DIFF}d ago)"
+          fi
+
+          awk -v status="$STATUS" '
+            {
+              if ($0 ~ /<!-- SYSTEM_STATUS -->/) {
+                gsub(/<!-- SYSTEM_STATUS -->.*<!-- SYSTEM_STATUS -->/,
+                     "<!-- SYSTEM_STATUS -->" status "<!-- SYSTEM_STATUS -->")
+              }
+              print
+            }
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "chore: update system status" || exit 0
+          git push
