@@ -1,36 +1,83 @@
 name: Update Dev Log
 
 on:
+  push:
+    branches: [main]
   schedule:
-    - cron: "0 0 * * 1" # every Monday
+    - cron: "0 6 * * 1" # every Monday at 6am UTC
   workflow_dispatch:
 
 jobs:
   update-dev-log:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Generate Dev Log
+        id: devlog
         run: |
-          COMMITS=$(git log --since="7 days ago" --pretty=format:"- %s" | head -n 5)
+          # Get last 7 days of commits, deduplicated by message
+          COMMITS=$(git log --since="7 days ago" --pretty=format:"%s|%ad" \
+            --date=format:"%b %d" \
+            --author-date-is-committer-date \
+            | sort -u -t'|' -k1,1 \
+            | head -n 6 \
+            | awk -F'|' '{print "- `"$2"` " $1}')
 
+          # Fallback if no commits
           if [ -z "$COMMITS" ]; then
-            COMMITS="- No commits this week"
+            COMMITS="_No commits this week — recharging... ⚡_"
           fi
 
-          awk '
-            /<!-- DEV_LOG:START -->/ {print; print ENVIRON["COMMITS"]; skip=1; next}
-            /<!-- DEV_LOG:END -->/ {skip=0}
-            !skip
-          ' README.md > README.tmp && mv README.tmp README.md
+          # Count repos touched this week
+          REPOS=$(git log --since="7 days ago" --pretty=format:"%D" \
+            | grep -oP '(?<=origin/)[\w-]+' | sort -u | tr '\n' ', ' | sed 's/,$//')
 
-      - name: Commit changes
+          WEEK=$(date +"%b %d, %Y")
+          TOTAL=$(git log --since="7 days ago" --oneline | wc -l | tr -d ' ')
+
+          {
+            echo "COMMITS<<EOF"
+            echo ""
+            echo "### 🗓️ Week of $WEEK — $TOTAL commit(s)"
+            echo ""
+            echo "$COMMITS"
+            echo ""
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Inject into README
+        env:
+          BLOCK: ${{ steps.devlog.outputs.COMMITS }}
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          python3 - <<'PYEOF'
+          import os, re
+
+          block = os.environ["BLOCK"]
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          new_content = re.sub(
+              r"(<!-- DEV_LOG:START -->).*?(<!-- DEV_LOG:END -->)",
+              f"<!-- DEV_LOG:START -->\n{block}\n<!-- DEV_LOG:END -->",
+              content,
+              flags=re.DOTALL
+          )
+
+          with open("README.md", "w") as f:
+              f.write(new_content)
+          PYEOF
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore: update dev log" || exit 0
+          git diff --cached --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "chore(readme): update dev log [skip ci]"
           git push
