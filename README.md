@@ -1,5 +1,6 @@
 ```txt
 SYSTEM BOOTING...
+
 █▓▒░ Backend Module Loaded        ✔
 █▓▒░ Robotics Interface Ready    ✔
 █▓▒░ Status: ACTIVE 🟢 (last commit: 0d ago)
