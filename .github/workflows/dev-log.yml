@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 6 * * 1" # Every Monday 6am UTC
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 jobs:
@@ -24,19 +24,24 @@ jobs:
         id: devlog
         shell: bash
         run: |
-          set -euo pipefail
+          set -eo pipefail
 
           SINCE="7 days ago"
 
           START_DATE=$(date -d "$SINCE" +"%b %d")
           END_DATE=$(date +"%b %d, %Y")
 
-          TOTAL=$(git rev-list --count --since="$SINCE" HEAD || echo 0)
+          # Safe commit count
+          if git rev-parse --verify HEAD >/dev/null 2>&1; then
+            TOTAL=$(git rev-list --count --since="$SINCE" HEAD)
+          else
+            TOTAL=0
+          fi
 
-          # Collect commits (unique messages, newest first)
+          # Safe commit collection
           COMMITS=$(git log --since="$SINCE" \
             --pretty=format:"%cd|%s" \
-            --date=format:"%b %d" \
+            --date=format:"%b %d" 2>/dev/null \
             | awk -F'|' '!seen[$2]++ {print "- `"$1"` "$2}' \
             | head -n 6)
 
@@ -44,9 +49,10 @@ jobs:
             COMMITS="_No commits this week — recharging ⚡_"
           fi
 
-          # Branches touched in timeframe
-          BRANCHES=$(git for-each-ref --format='%(refname:short)' refs/remotes/origin \
-            | sed 's|origin/||' \
+          # Only branches that had commits in timeframe
+          BRANCHES=$(git log --since="$SINCE" --pretty=format:"%D" 2>/dev/null \
+            | grep -oE 'origin/[[:alnum:]._-]+' \
+            | cut -d'/' -f2 \
             | sort -u \
             | tr '\n' ', ' \
             | sed 's/, $//')
@@ -89,7 +95,6 @@ jobs:
               sys.exit(1)
 
           pattern = rf"{re.escape(start)}.*?{re.escape(end)}"
-
           replacement = f"{start}\n{block}\n{end}"
 
           updated = re.sub(pattern, replacement, content, flags=re.DOTALL)
