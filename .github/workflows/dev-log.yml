@@ -4,47 +4,64 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 6 * * 1" # every Monday at 6am UTC
+    - cron: "0 6 * * 1" # Every Monday 6am UTC
   workflow_dispatch:
 
 jobs:
   update-dev-log:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Generate Dev Log
+      - name: Generate Dev Log Block
         id: devlog
+        shell: bash
         run: |
-          # Get last 7 days of commits, deduplicated by message
-          COMMITS=$(git log --since="7 days ago" --pretty=format:"%s|%ad" \
+          set -euo pipefail
+
+          START_DATE=$(date -d "7 days ago" +"%b %d")
+          END_DATE=$(date +"%b %d, %Y")
+          TOTAL=$(git log --since="7 days ago" --oneline | wc -l | tr -d ' ')
+
+          # Collect commits (deduplicated by message)
+          COMMITS=$(git log --since="7 days ago" \
+            --pretty=format:"%s|%ad" \
             --date=format:"%b %d" \
             --author-date-is-committer-date \
-            | sort -u -t'|' -k1,1 \
+            | sort -t'|' -k1,1 -u \
             | head -n 6 \
             | awk -F'|' '{print "- `"$2"` " $1}')
 
-          # Fallback if no commits
+          # Fallback if empty
           if [ -z "$COMMITS" ]; then
-            COMMITS="_No commits this week — recharging... ⚡_"
+            COMMITS="_No commits this week — recharging ⚡_"
           fi
 
-          # Count repos touched this week
+          # Detect branches touched this week (portable)
           REPOS=$(git log --since="7 days ago" --pretty=format:"%D" \
-            | grep -oP '(?<=origin/)[\w-]+' | sort -u | tr '\n' ', ' | sed 's/,$//')
+            | grep -oE 'origin/[[:alnum:]-]+' \
+            | cut -d'/' -f2 \
+            | sort -u \
+            | tr '\n' ', ' \
+            | sed 's/, $//')
 
-          WEEK=$(date +"%b %d, %Y")
-          TOTAL=$(git log --since="7 days ago" --oneline | wc -l | tr -d ' ')
+          if [ -z "$REPOS" ]; then
+            REPOS="main"
+          fi
 
           {
-            echo "COMMITS<<EOF"
+            echo "BLOCK<<EOF"
             echo ""
-            echo "### 🗓️ Week of $WEEK — $TOTAL commit(s)"
+            echo "### 🗓️ $START_DATE – $END_DATE"
+            echo ""
+            echo "**$TOTAL commit(s)** across: \`$REPOS\`"
             echo ""
             echo "$COMMITS"
             echo ""
@@ -53,14 +70,19 @@ jobs:
 
       - name: Inject into README
         env:
-          BLOCK: ${{ steps.devlog.outputs.COMMITS }}
+          BLOCK: ${{ steps.devlog.outputs.BLOCK }}
         run: |
           python3 - <<'PYEOF'
-          import os, re
+          import os, re, sys
 
           block = os.environ["BLOCK"]
-          with open("README.md", "r") as f:
+
+          with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
+
+          if "<!-- DEV_LOG:START -->" not in content or "<!-- DEV_LOG:END -->" not in content:
+              print("❌ DEV_LOG markers not found in README.md")
+              sys.exit(1)
 
           new_content = re.sub(
               r"(<!-- DEV_LOG:START -->).*?(<!-- DEV_LOG:END -->)",
@@ -69,15 +91,21 @@ jobs:
               flags=re.DOTALL
           )
 
-          with open("README.md", "w") as f:
+          with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_content)
           PYEOF
 
-      - name: Commit & push
+      - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add README.md
-          git diff --cached --quiet && echo "Nothing to commit" && exit 0
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+
           git commit -m "chore(readme): update dev log [skip ci]"
           git push
