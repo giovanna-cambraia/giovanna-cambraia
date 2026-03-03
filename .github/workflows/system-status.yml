@@ -2,19 +2,27 @@ name: Update System Status
 
 on:
   schedule:
-    - cron: "0 0 * * *" # runs daily
+    - cron: "0 0 * * *" # Daily at midnight UTC
   workflow_dispatch:
 
 jobs:
   system-status:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Calculate system status
+        shell: bash
         run: |
+          set -euo pipefail
+
           LAST_COMMIT_DATE=$(git log -1 --format=%ct)
           NOW=$(date +%s)
           DAYS_DIFF=$(( (NOW - LAST_COMMIT_DATE) / 86400 ))
@@ -27,6 +35,11 @@ jobs:
             STATUS="OFFLINE 🔴 (last commit: ${DAYS_DIFF}d ago)"
           fi
 
+          if ! grep -q "<!-- SYSTEM_STATUS -->" README.md; then
+            echo "❌ SYSTEM_STATUS markers not found in README.md"
+            exit 1
+          fi
+
           awk -v status="$STATUS" '
             {
               if ($0 ~ /<!-- SYSTEM_STATUS -->/) {
@@ -35,12 +48,21 @@ jobs:
               }
               print
             }
-          ' README.md > README.tmp && mv README.tmp README.md
+          ' README.md > README.tmp
 
-      - name: Commit changes
+          mv README.tmp README.md
+
+      - name: Commit & Push
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add README.md
-          git commit -m "chore: update system status" || exit 0
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+
+          git commit -m "chore(readme): update system status [skip ci]"
           git push
