@@ -1,10 +1,13 @@
-```txt
+<!-- SYSTEM_BOOT:START -->
 SYSTEM BOOTING...
 
 █▓▒░ Backend Module Loaded        ✔
 █▓▒░ Robotics Interface Ready    ✔
-█▓▒░ Status: ACTIVE 🟢 (last commit: 0d ago)
+█▓▒░ Status: <!-- SYSTEM_STATUS -->ACTIVE 🟢 (last commit: 0d ago)<!-- SYSTEM_STATUS -->
 ```
+<!-- SYSTEM_BOOT:END -->
+```txt
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
 ### 👋 Hey there! 
@@ -46,7 +49,7 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 ## 🌐 Socials:
 
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/mssuicide_sheep) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:giovannacambraia8@gmail.con) 
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/mssuicide_sheep) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:giovannacambraia8@gmail.com) 
 
 # 💻 Tech Stack:
 
