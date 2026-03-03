@@ -26,34 +26,33 @@ jobs:
         run: |
           set -euo pipefail
 
-          START_DATE=$(date -d "7 days ago" +"%b %d")
+          SINCE="7 days ago"
+
+          START_DATE=$(date -d "$SINCE" +"%b %d")
           END_DATE=$(date +"%b %d, %Y")
-          TOTAL=$(git log --since="7 days ago" --oneline | wc -l | tr -d ' ')
 
-          # Collect commits (deduplicated by message)
-          COMMITS=$(git log --since="7 days ago" \
-            --pretty=format:"%s|%ad" \
+          TOTAL=$(git rev-list --count --since="$SINCE" HEAD || echo 0)
+
+          # Collect commits (unique messages, newest first)
+          COMMITS=$(git log --since="$SINCE" \
+            --pretty=format:"%cd|%s" \
             --date=format:"%b %d" \
-            --author-date-is-committer-date \
-            | sort -t'|' -k1,1 -u \
-            | head -n 6 \
-            | awk -F'|' '{print "- `"$2"` " $1}')
+            | awk -F'|' '!seen[$2]++ {print "- `"$1"` "$2}' \
+            | head -n 6)
 
-          # Fallback if empty
           if [ -z "$COMMITS" ]; then
             COMMITS="_No commits this week — recharging ⚡_"
           fi
 
-          # Detect branches touched this week (portable)
-          REPOS=$(git log --since="7 days ago" --pretty=format:"%D" \
-            | grep -oE 'origin/[[:alnum:]-]+' \
-            | cut -d'/' -f2 \
+          # Branches touched in timeframe
+          BRANCHES=$(git for-each-ref --format='%(refname:short)' refs/remotes/origin \
+            | sed 's|origin/||' \
             | sort -u \
             | tr '\n' ', ' \
             | sed 's/, $//')
 
-          if [ -z "$REPOS" ]; then
-            REPOS="main"
+          if [ -z "$BRANCHES" ]; then
+            BRANCHES="main"
           fi
 
           {
@@ -61,7 +60,7 @@ jobs:
             echo ""
             echo "### 🗓️ $START_DATE – $END_DATE"
             echo ""
-            echo "**$TOTAL commit(s)** across: \`$REPOS\`"
+            echo "**$TOTAL commit(s)** across: \`$BRANCHES\`"
             echo ""
             echo "$COMMITS"
             echo ""
@@ -73,26 +72,30 @@ jobs:
           BLOCK: ${{ steps.devlog.outputs.BLOCK }}
         run: |
           python3 - <<'PYEOF'
-          import os, re, sys
+          import os
+          import re
+          import sys
 
           block = os.environ["BLOCK"]
 
-          with open("README.md", "r", encoding="utf-8") as f:
+          with open("README.md", encoding="utf-8") as f:
               content = f.read()
 
-          if "<!-- DEV_LOG:START -->" not in content or "<!-- DEV_LOG:END -->" not in content:
-              print("❌ DEV_LOG markers not found in README.md")
+          start = "<!-- DEV_LOG:START -->"
+          end = "<!-- DEV_LOG:END -->"
+
+          if start not in content or end not in content:
+              print("DEV_LOG markers not found.")
               sys.exit(1)
 
-          new_content = re.sub(
-              r"(<!-- DEV_LOG:START -->).*?(<!-- DEV_LOG:END -->)",
-              f"<!-- DEV_LOG:START -->\n{block}\n<!-- DEV_LOG:END -->",
-              content,
-              flags=re.DOTALL
-          )
+          pattern = rf"{re.escape(start)}.*?{re.escape(end)}"
+
+          replacement = f"{start}\n{block}\n{end}"
+
+          updated = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
           with open("README.md", "w", encoding="utf-8") as f:
-              f.write(new_content)
+              f.write(updated)
           PYEOF
 
       - name: Commit & Push
@@ -103,7 +106,7 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "Nothing to commit"
+            echo "Nothing to commit."
             exit 0
           fi
 
