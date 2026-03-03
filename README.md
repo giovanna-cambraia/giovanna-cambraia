@@ -1,4 +1,5 @@
 <!-- SYSTEM_BOOT:START -->
+```txt
 SYSTEM BOOTING...
 
 █▓▒░ Backend Module Loaded        ✔
@@ -6,7 +7,6 @@ SYSTEM BOOTING...
 █▓▒░ Status: <!-- SYSTEM_STATUS -->ACTIVE 🟢 (last commit: 0d ago)<!-- SYSTEM_STATUS -->
 ```
 <!-- SYSTEM_BOOT:END -->
-```txt
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
