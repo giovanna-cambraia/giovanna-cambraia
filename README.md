@@ -100,22 +100,6 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00C9FF,100:92FE9D&height=2"/>
 
-## 📓 Dev Log (auto-generated)
-<!-- DEV_LOG:START -->
-
-### 🗓️ Feb 24 – Mar 03, 2026
-
-**30 commit(s)** across: `main,`
-
-- `Mar 03` Update README.md
-- `Mar 03` chore(readme): update dev log [skip ci]
-- `Mar 03` Update dev-log.yml
-- `Mar 03` Create update-wakatime.yml
-- `Mar 03` Update system-status.yml
-- `Feb 27` Create wakatime.yml
-
-<!-- DEV_LOG:END -->
-
 ## ⏱️ This Week I Coded...
 
 <!--START_SECTION:waka-->
