@@ -4,7 +4,7 @@ SYSTEM BOOTING...
 
 █▓▒░ Backend Module Loaded        ✔
 █▓▒░ Robotics Interface Ready    ✔
-█▓▒░ Status: <!-- SYSTEM_STATUS -->ACTIVE 🟢 (last commit: 1d ago)<!-- SYSTEM_STATUS -->
+█▓▒░ Status: ACTIVE 🟢
 ```
 <!-- SYSTEM_BOOT:END -->
 
