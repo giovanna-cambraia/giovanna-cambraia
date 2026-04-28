@@ -111,8 +111,6 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
  > 
 > 🏆 398 Contributions in the Year 2026
  > 
-> 🚫 Not Opted to Hire
- > 
 > 📜 9 Public Repositories 
  > 
 > 🔑 31 Private Repositories 
