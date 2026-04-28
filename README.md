@@ -168,11 +168,6 @@ C                        1 repo              █░░░░░░░░░░�
 
 
 
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/main/assets/bar_graph.png)
-
-
  Last Updated on 23/03/2026 08:03:31 UTC
 <!--END_SECTION:waka-->
 
