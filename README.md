@@ -167,11 +167,6 @@ C                        2 repos             █░░░░░░░░░░�
 
 
 
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/main/assets/bar_graph.png)
-
-
  Last Updated on 28/04/2026 17:20:33 UTC
 <!--END_SECTION:waka-->
 
