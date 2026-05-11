@@ -111,8 +111,6 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
  > 
 > 🏆 419 Contributions in the Year 2026
  > 
-> 🚫 Not Opted to Hire
- > 
 > 📜 9 Public Repositories 
  > 
 > 🔑 31 Private Repositories 
@@ -167,10 +165,6 @@ Shell                    1 repo              █░░░░░░░░░░�
 ```
 
 
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/main/assets/bar_graph.png)
 
 
  Last Updated on 11/05/2026 10:40:06 UTC
