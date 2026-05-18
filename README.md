@@ -107,67 +107,34 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 
 **🐱 My GitHub Data** 
 
-> 📦 457.5 kB Used in GitHub's Storage 
+> 📦 457.7 kB Used in GitHub's Storage 
  > 
-> 🏆 419 Contributions in the Year 2026
+> 🏆 425 Contributions in the Year 2026
  > 
-> 📜 9 Public Repositories 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 10 Public Repositories 
  > 
 > 🔑 31 Private Repositories 
  > 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning                550 commits         █████████████░░░░░░░░░░░░   52.23 % 
-🌆 Daytime                443 commits         ███████████░░░░░░░░░░░░░░   42.07 % 
-🌃 Evening                50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.75 % 
-🌙 Night                  10 commits          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.95 % 
-```
-📅 **I'm Most Productive on Tuesday** 
-
-```text
-Monday                   180 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.09 % 
-Tuesday                  315 commits         ███████░░░░░░░░░░░░░░░░░░   29.91 % 
-Wednesday                208 commits         █████░░░░░░░░░░░░░░░░░░░░   19.75 % 
-Thursday                 167 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.86 % 
-Friday                   172 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.33 % 
-Saturday                 6 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.57 % 
-Sunday                   5 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.47 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-TypeScript               18 hrs 40 mins      ███████████████████░░░░░░   75.61 % 
-Prisma                   1 hr 45 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.12 % 
-Markdown                 1 hr 32 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.21 % 
-CSS                      1 hr 20 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.44 % 
-Bash                     39 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.63 % 
-
-🐱‍💻 Projects: 
-al-system-os             15 hrs 46 mins      ████████████████░░░░░░░░░   63.83 % 
-al-system-os-ftd         6 hrs 13 mins       ██████░░░░░░░░░░░░░░░░░░░   25.21 % 
-port-artemis             1 hr 42 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   06.93 % 
-stock-control-frontend-be22 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.51 % 
-cataki-dv                14 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.97 % 
-```
-
 **I Mostly Code in TypeScript** 
 
 ```text
-TypeScript               17 repos            ██████████░░░░░░░░░░░░░░░   40.48 % 
-CSS                      7 repos             ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
-HTML                     3 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   07.14 % 
-C                        2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.76 % 
-Shell                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.38 % 
+TypeScript               17 repos            ██████████░░░░░░░░░░░░░░░   39.53 % 
+CSS                      7 repos             ████░░░░░░░░░░░░░░░░░░░░░   16.28 % 
+C                        2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.65 % 
+Ada                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.33 % 
+Shell                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.33 % 
 ```
 
 
 
+**Timeline**
 
- Last Updated on 11/05/2026 10:40:06 UTC
+![Lines of Code chart](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/main/assets/bar_graph.png)
+
+
+ Last Updated on 18/05/2026 11:08:36 UTC
 <!--END_SECTION:waka-->
 
 ![Snake animation](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg)
