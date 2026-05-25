@@ -103,30 +103,77 @@ Currently exploring: REST APIs, Nest.js, testing, Docker, and software architect
 ## ⏱️ This Week I Coded...
 
 <!--START_SECTION:waka-->
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.62%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.77%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
 > 📦 457.7 kB Used in GitHub's Storage 
  > 
-> 🏆 425 Contributions in the Year 2026
+> 🏆 501 Contributions in the Year 2026
+ > 
+> 🚫 Not Opted to Hire
  > 
 > 📜 10 Public Repositories 
  > 
-> 🔑 31 Private Repositories 
+> 🔑 32 Private Repositories 
  > 
-**I Mostly Code in TypeScript** 
+**I'm an Early 🐤** 
 
 ```text
-TypeScript               17 repos            ██████████░░░░░░░░░░░░░░░   39.53 % 
-CSS                      7 repos             ████░░░░░░░░░░░░░░░░░░░░░   16.28 % 
-C                        2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.65 % 
-Ada                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.33 % 
-Shell                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.33 % 
+🌞 Morning                618 commits         █████████████░░░░░░░░░░░░   52.96 % 
+🌆 Daytime                489 commits         ██████████░░░░░░░░░░░░░░░   41.90 % 
+🌃 Evening                50 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.28 % 
+🌙 Night                  10 commits          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.86 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   199 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.05 % 
+Tuesday                  339 commits         ███████░░░░░░░░░░░░░░░░░░   29.05 % 
+Wednesday                228 commits         █████░░░░░░░░░░░░░░░░░░░░   19.54 % 
+Thursday                 200 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.14 % 
+Friday                   190 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.28 % 
+Saturday                 6 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.51 % 
+Sunday                   5 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.43 % 
 ```
 
 
- Last Updated on 18/05/2026 11:08:36 UTC
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+TypeScript               15 hrs 51 mins      ████████████████░░░░░░░░░   65.81 % 
+CSS                      3 hrs 11 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.25 % 
+C                        1 hr 47 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.44 % 
+Bash                     55 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.84 % 
+Git Config               46 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.23 % 
+
+🐱‍💻 Projects: 
+al-system-os-ftd         11 hrs 25 mins      ████████████░░░░░░░░░░░░░   47.39 % 
+al-system-os             9 hrs 15 mins       ██████████░░░░░░░░░░░░░░░   38.42 % 
+c-playground             1 hr 47 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   07.44 % 
+project-stock-control-bac1 hr 19 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   05.48 % 
+code-sentinel            12 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.84 % 
+```
+
+**I Mostly Code in TypeScript** 
+
+```text
+TypeScript               19 repos            ███████████░░░░░░░░░░░░░░   42.22 % 
+CSS                      7 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.56 % 
+C                        2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.44 % 
+Ada                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.22 % 
+Shell                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.22 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/main/assets/bar_graph.png)
+
+
+ Last Updated on 25/05/2026 11:12:49 UTC
 <!--END_SECTION:waka-->
 
 ![Snake animation](https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg)
