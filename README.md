@@ -1,6 +1,16 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:2575fc&height=250&section=header&text=Hi,%20I'm%20Giovanna%20%F0%9F%91%8B&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20crafting%20systems%20from%20web%20to%20robotics&descAlignY=58&descSize=18&descColor=e0e0ff"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:6a11cb,50:8b5cf6,100:2575fc&height=280&section=header&text=Giovanna%20Cambraia&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=&descAlignY=51"/>
+
+<img src="https://readme-typing-svg.demolab.com/?font=Poppins&weight=500&size=20&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=560&lines=Backend+Developer+%F0%9F%92%BB;Robotics+%26+Embedded+Systems+Enthusiast+%F0%9F%A4%96;Future+Ada%2FSPARK+Engineer+%E2%9C%88%EF%B8%8F"/>
+
+</div>
+
+<br>
+
+<div align="center">
+
+> *Turning ideas into scalable systems — from backend APIs to robots that move in the real world.*
 
 </div>
 
@@ -10,29 +20,29 @@
 <tr>
 <td width="33%" align="center" valign="top">
 
-### 🧠
+<img src="https://img.icons8.com/fluency/96/api-settings.png" width="60"/>
 
-**What I build**
+### What I Build
 
-Scalable backend systems with **JavaScript & Java**, and clean architectures that don't fall apart at scale.
-
-</td>
-<td width="33%" align="center" valign="top">
-
-### 🤖
-
-**Where I'm headed**
-
-Diving into **robotics & embedded systems** — learning **C**, on my way to **Ada/SPARK** for aerospace-grade reliability.
+Scalable **backend systems** in JavaScript & Java — architectures built to grow, not to break.
 
 </td>
 <td width="33%" align="center" valign="top">
 
-### 🎓
+<img src="https://img.icons8.com/fluency/96/robot-2.png" width="60"/>
 
-**Who I am**
+### Where I'm Headed
 
-CS student, endlessly curious, always experimenting with new stacks and ways to solve real problems.
+Learning **C** as my gateway into **Ada/SPARK**, chasing aerospace-grade reliability in robotics.
+
+</td>
+<td width="33%" align="center" valign="top">
+
+<img src="https://img.icons8.com/fluency/96/graduation-cap.png" width="60"/>
+
+### Who I Am
+
+A **CS student** who never stops experimenting — new stacks, new problems, same curiosity.
 
 </td>
 </tr>
@@ -72,10 +82,6 @@ CS student, endlessly curious, always experimenting with new stacks and ways to 
 </td>
 </tr>
 </table>
-
-<!--START_SECTION:waka-->
-🏆 **501** contributions in 2026 &nbsp;·&nbsp; 📜 **10** public repos &nbsp;·&nbsp; 🔑 **32** private repos &nbsp;·&nbsp; 💬 Mostly coding in **TypeScript**
-<!--END_SECTION:waka-->
 
 </div>
 
