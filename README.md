@@ -1,138 +1,43 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:2b2d31,100:8a8d91&height=180&section=header&text=Giovanna%20Cambraia&fontColor=d0d3d6&fontSize=44&fontAlignY=38&desc=safety-critical%20%7C%20avionics%20%7C%20embedded&descColor=8a8d91&descSize=16&descAlignY=58"/>
+<!-- Sharp Metallic Header -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:09090b,50:1f2124,100:09090b&height=130&section=header&text=GIOVANNA%20CAMBRAIA&fontColor=d0d3d6&fontSize=38&fontAlignY=42&desc=AVIONICS%20%E2%96%AA%20FLIGHT%20SOFTWARE%20%E2%96%AA%20HIGH-INTEGRITY%20SYSTEMS&descColor=7d828a&descSize=13&descAlignY=68" width="100%"/>
 
-![Role](https://img.shields.io/badge/Backend_Dev-1a1a1a?style=for-the-badge&labelColor=0d0d0d&color=2b2d31)
-![Focus](https://img.shields.io/badge/Avionics_%26_Embedded-1a1a1a?style=for-the-badge&labelColor=0d0d0d&color=5c6066)
-![Goal](https://img.shields.io/badge/ITA_%C2%B7_INPE_%C2%B7_UNICAMP-1a1a1a?style=for-the-badge&labelColor=0d0d0d&color=8a8d91)
-
-</div>
-
-<br>
-
-## `> whoami`
-
-CS student in Brazil, backend dev by day (NestJS, TypeScript, Postgres), **flight software and embedded systems by obsession**.
-I'm building toward a career in avionics, robotics and space systems, and I learn by building things that follow real standards (DO-178C, DO-254, ARP4754B), not just things that run.
-
-<br>
-
-## `> projects --current`
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### ✈️ FSAC
-**Flight Stability Augmentation Computer**
-
-Stability augmentation control law running on a flight computer, designed with DO-178C in mind.
-
-`SPARK Ada` `C` `DO-178C`
-
-[→ repo](https://github.com/giovanna-cambraia/fsac)
-
-</td>
-<td width="33%" valign="top">
-
-### 📡 TCAS Demo
-**Traffic collision avoidance**
-
-Collision-avoidance logic demo: traffic advisories, resolution advisories, visualized live.
-
-`Ada` `C` `raylib`
-
-[→ repo](https://github.com/giovanna-cambraia/tcas-demo)
-
-</td>
-<td width="33%" valign="top">
-
-### 🐕 Cerberus Boot
-**Boot chain**
-
-Bring-up and boot sequence work, close to the metal.
-
-`C` `Embedded`
-
-[→ repo](https://github.com/giovanna-cambraia/cerberus-boot)
-
-</td>
-</tr>
-</table>
-
-<!-- TODO: adjust the one-liners + stack tags to match what each project really does -->
-
-<details>
-<summary><b>More in the lab</b></summary>
-
-<br>
-
-| Project | What it is |
-|---|---|
-| **CPU emulator + RTOS** | Documented, standards-following emulator and RTOS in C/Rust |
-| **MIL-STD-1553** | Avionics data bus implementation |
-| **Integrated Avionics** | Monorepo spanning ARP4754B/4761A, DO-178C/254/326 and bus protocols |
-| **EmbedBoard** | C + raylib tool for learning embedded hardware |
-| **birdflu / birdcage** | C antivirus + firewall monorepo |
-
-</details>
-
-<br>
-
-<div align="center">
-
-## `> stack`
-
-<img src="https://skillicons.dev/icons?i=c,cpp,rust,py,linux,bash,git,githubactions&theme=dark&perline=8"/>
-
-<sub>**systems**</sub>
-
-<img src="https://skillicons.dev/icons?i=ts,nodejs,nestjs,nextjs,react,postgres,redis,docker&theme=dark&perline=8"/>
-
-<sub>**backend / web**</sub>
-
-![Ada](https://img.shields.io/badge/Ada_/_SPARK-1a1a1a?style=flat-square&labelColor=0d0d0d&color=5c6066)
-![Alire](https://img.shields.io/badge/Alire-1a1a1a?style=flat-square&labelColor=0d0d0d&color=5c6066)
-![raylib](https://img.shields.io/badge/raylib-1a1a1a?style=flat-square&labelColor=0d0d0d&color=5c6066)
-
-</div>
-
-<br>
-
-<div align="center">
-
-## `> telemetry`
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-<img src="https://stats-github-readme.vercel.app/api?username=giovanna-cambraia&show_icons=true&hide_border=true&bg_color=0d0d0d&title_color=c0c3c7&text_color=8a8d91&icon_color=5c6066"/>
-
-</td>
-<td valign="top" width="50%">
-
-<img src="https://stats-github-readme.vercel.app/api/top-langs/?username=giovanna-cambraia&layout=compact&hide_border=true&bg_color=0d0d0d&title_color=c0c3c7&text_color=8a8d91"/>
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br>
-
-<div align="center">
-
-## `> contact`
-
-<a href="mailto:giovannacambraia8@gmail.com"><img src="https://img.shields.io/badge/Email-2b2d31?style=for-the-badge&logo=gmail&logoColor=c0c3c7"/></a>
-<a href="https://discord.gg/mssuicide_sheep"><img src="https://img.shields.io/badge/Discord-2b2d31?style=for-the-badge&logo=discord&logoColor=c0c3c7"/></a>
+<!-- Monospace Telemetry Status Bar -->
+<code>SYS.ID: GC-BR // TARGET: DO-178C [DAL-A/B] · DO-333 · ARP4754B // STATUS: NOMINAL</code>
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/giovanna-cambraia/giovanna-cambraia/output/github-contribution-grid-snake-dark.svg" alt="Snake animation"/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8a8d91,50:2b2d31,100:0d0d0d&height=120&section=footer"/>
+![Focus](https://img.shields.io/badge/FOCUS-FLIGHT_CONTROL_%26_EMBEDDED-09090b?style=flat-square&labelColor=1f2124&color=09090b)
+![Core](https://img.shields.io/badge/CORE-SPARK_ADA_2014_%7C_C11-09090b?style=flat-square&labelColor=1f2124&color=09090b)
+![Academic](https://img.shields.io/badge/TARGET-USP_%C2%B7_ITA_%C2%B7_INPE-09090b?style=flat-square&labelColor=1f2124&color=09090b)
 
 </div>
+
+<br>
+
+### `[ 01 // SYSTEM_OVERVIEW ]`
+
+Computer Science undergraduate in Brazil transitioning from backend engineering into **safety-critical flight software, formal verification, and bare-metal embedded systems**. 
+
+I don't just write code that compiles—I engineer deterministic systems backed by formal proofs, strict static contracts, and aerospace assurance standards (**DO-178C**, **DO-333**, **DO-254**).
+
+```text
++-------------------------------------------------------------------------+
+| FLIGHT_DECK // OPERATIONAL PROFILE                                      |
++-------------------------------------------------------------------------+
+| > PRIMARY DOMAIN   : Flight Control Laws, Collision Avoidance, SecBoot  |
+| > ASSURANCE FOCUS  : Formal Verification (GNATprove), Zero-RTE Proofs   |
+| > HARDWARE TARGETS : Bare-Metal MCUs, FPGA/VHDL Co-Sim, MIL-STD-1553    |
+| > DAYTIME ENGINE   : Distributed Backends (TypeScript, NestJS, Postgres)|
++-------------------------------------------------------------------------+
+[ 02 // ACTIVE_SUBSYSTEMS ]SUBSYSTEMDESIGNATIONASSURANCE / STACKARCHITECTURE & OBJECTIVEREPOFSACFlight Stability Augmentation ComputerSPARK 2014 Ada 2012DO-178C DAL-A DO-333Core stability augmentation control laws with mathematically proven absence of run-time errors via gnatprove contracts.SRC ↗TCAS-IITraffic Alert & Collision AvoidanceSPARK Ada C11DO-178C DAL-B UnityDual-language architecture pairing formally verified TA/RA resolution logic with a deterministic C11 hardware driver layer.SRC ↗CERBERUSCryptographic Secure Boot ChainC11 VHDL GHDLSHA-256 MonocypherBare-metal root-of-trust bring-up, firmware signature verification, and hardware-level simulation.SRC ↗MODULESPECIFICATIONSTACKMIL-STD-1553Avionics serial data bus controller/terminal protocol implementation & SDP baselinesC11 SPARK AdaTHERAC-25 SIMControl architecture reconstruction analyzing shared-state race conditions & overflow faultsC11 ConcurrencyINTEGRATED AVIONICSSystems engineering monorepo spanning ARP4754B/4761A, DO-254, and DO-326ASystems Eng AdaCPU EMU + RTOSDeterministic real-time kernel and custom instruction-set emulatorC RustBIRDFLU / BIRDCAGELow-level host intrusion detection, packet filtering, and firewall suiteC Linux[ 03 // TOOLCHAIN_&_VERIFICATION_MATRIX ]YAMLSAFETY_CRITICAL_&_SYSTEMS:
+  languages:   [Ada 2012, SPARK 2014, C11 (-Wall -Wextra -Werror), C++, Rust, VHDL]
+  toolchains:  [GNAT Native, Alire (alr), GPRbuild, GNATprove, GHDL, Unity Test]
+  environment: [Linux, WSL2, MINGW64, Bare-Metal, GitHub Actions CI]
+
+BACKEND_&_INFRASTRUCTURE:
+  languages:   [TypeScript, Node.js, Python, SQL, Bash]
+  frameworks:  [NestJS, Next.js, React]
+  data_&_ops:  [PostgreSQL, Redis, Docker]
+[ 04 // TELEMETRY_READOUT ][ 05 // COMMS_LINK ]
